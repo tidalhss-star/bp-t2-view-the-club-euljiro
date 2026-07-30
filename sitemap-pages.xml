@@ -26,12 +26,27 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://view.the-club-euljiro.xyz/posts/field_note-002-qrzs29.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://view.the-club-euljiro.xyz/posts/field_note-003-1gwcb32.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://view.the-club-euljiro.xyz/posts/guide-001-1x5kf14.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://view.the-club-euljiro.xyz/posts/guide-002-1bpw5mf.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://view.the-club-euljiro.xyz/posts/major_compare-003-1cmslrg.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -42,6 +57,11 @@
   </url>
   <url>
     <loc>https://view.the-club-euljiro.xyz/posts/myth-001-1xdfq5a.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://view.the-club-euljiro.xyz/posts/qa-004-y3vxxr.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
