@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://view.the-club-euljiro.xyz/sitemap.xml
+Sitemap: https://view.the-club-euljiro.xyz/sitemap-pages.xml

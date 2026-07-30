@@ -1,33 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://view.the-club-euljiro.xyz/about.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://view.the-club-euljiro.xyz/blog-1.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://view.the-club-euljiro.xyz/blog-2.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://view.the-club-euljiro.xyz/blog-3.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://view.the-club-euljiro.xyz/</loc>
-    <lastmod>2026-07-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://view.the-club-euljiro.xyz/about.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://view.the-club-euljiro.xyz/posts/field_note-003-1gwcb32.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://view.the-club-euljiro.xyz/blog-1.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://view.the-club-euljiro.xyz/posts/guide-002-1bpw5mf.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://view.the-club-euljiro.xyz/blog-2.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://view.the-club-euljiro.xyz/posts/major_compare-004-1ggcxel.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://view.the-club-euljiro.xyz/blog-3.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://view.the-club-euljiro.xyz/posts/myth-001-1xdfq5a.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://view.the-club-euljiro.xyz/posts/qa-005-1a4d6oi.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
