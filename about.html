@@ -1,287 +1,285 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-night-electric">
-    <title>소개 | 서울 밤의 길잡이</title>
-    <meta name="description" content="서울 유흥업소 이용 가이드 블로그 운영진을 소개합니다. 투명하고 안전한 밤문화 조성을 위한 저희의 철학과 비전을 확인해보세요.">
-    <meta name="keywords" content="유흥 이용 주의사항, 셔츠룸, 룸싸롱, 텐프로, 텐카페, 쩜오, 하이퍼블릭, 풀싸롱, 가라오케, 노래방, 비즈니스클럽, 마사지, 펍, 유흥업소 체크리스트, 가격 투명성, 위생, 예약, 서울 유흥, 블로그 소개, 운영진">
-    <link rel="canonical" href="https://view.the-club-euljiro.xyz/about.html">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://view.the-club-euljiro.xyz/about.html">
-    <meta property="og:title" content="소개 | 서울 밤의 길잡이">
-    <meta property="og:description" content="서울 유흥업소 이용 가이드 블로그 운영진을 소개합니다. 투명하고 안전한 밤문화 조성을 위한 저희의 철학과 비전을 확인해보세요.">
-    <meta property="og:image" content="https://view.the-club-euljiro.xyz/og-image.jpg">
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://view.the-club-euljiro.xyz/about">
-    <meta property="twitter:title" content="소개 | 서울 밤의 길잡이">
-    <meta property="twitter:description" content="서울 유흥업소 이용 가이드 블로그 운영진을 소개합니다. 투명하고 안전한 밤문화 조성을 위한 저희의 철학과 비전을 확인해보세요.">
-    <meta property="twitter:image" content="https://view.the-club-euljiro.xyz/og-image.jpg">
-    <!-- CSS for Brutalist Avant-garde / KR Night Electric Theme (Inline for example, usually linked) -->
-    <style>
-        :root {
-            --color-electric-blue: #00FFFF;
-            --color-dark-gray: #1a1a1a;
-            --color-medium-gray: #333333;
-            --color-light-gray: #aaaaaa;
-            --color-white: #ffffff;
-            --font-mono: 'D2Coding', 'Nanum Gothic Coding', monospace;
-            --font-sans: 'Pretendard', 'Noto Sans KR', sans-serif;
-        }
-        body {
-            font-family: var(--font-sans);
-            background-color: var(--color-dark-gray);
-            color: var(--color-light-gray);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
-        .header {
-            background-color: var(--color-medium-gray);
-            border-bottom: 2px solid var(--color-electric-blue);
-            padding: 1rem 0;
-            text-align: center;
-        }
-        .header .logo {
-            font-family: var(--font-mono);
-            font-size: 2.5rem;
-            color: var(--color-electric-blue);
-            text-decoration: none;
-            letter-spacing: 2px;
-            display: block;
-            margin-bottom: 0.5rem;
-            text-shadow: 0 0 8px var(--color-electric-blue);
-        }
-        .header .tagline {
-            font-size: 1rem;
-            color: var(--color-light-gray);
-            margin-bottom: 1rem;
-        }
-        .nav {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-        .nav-item {
-            background-color: var(--color-dark-gray);
-            border: 1px solid var(--color-electric-blue);
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            color: var(--color-electric-blue);
-            font-weight: bold;
-            transition: background-color 0.3s, color 0.3s;
-            white-space: nowrap;
-        }
-        .nav-item:hover, .nav-item.active {
-            background-color: var(--color-electric-blue);
-            color: var(--color-dark-gray);
-        }
-        .main-content {
-            padding: 2rem 0;
-        }
-        .section-title {
-            font-family: var(--font-mono);
-            font-size: 2rem;
-            color: var(--color-electric-blue);
-            border-bottom: 2px solid var(--color-electric-blue);
-            padding-bottom: 0.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            text-shadow: 0 0 5px var(--color-electric-blue);
-        }
-        .card {
-            background-color: var(--color-medium-gray);
-            border: 1px solid var(--color-electric-blue);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-        }
-        .card-title {
-            font-family: var(--font-mono);
-            font-size: 1.5rem;
-            color: var(--color-electric-blue);
-            margin-bottom: 1rem;
-            text-shadow: 0 0 3px var(--color-electric-blue);
-        }
-        .card p {
-            color: var(--color-light-gray);
-            margin-bottom: 1rem;
-        }
-        .checklist {
-            list-style: none;
-            padding: 0;
-            margin: 1rem 0;
-        }
-        .checklist-item {
-            background-color: var(--color-dark-gray);
-            border: 1px dashed var(--color-electric-blue);
-            padding: 0.75rem 1rem;
-            margin-bottom: 0.5rem;
-            color: var(--color-white);
-            display: flex;
-            align-items: center;
-        }
-        .checklist-item::before {
-            content: '→';
-            color: var(--color-electric-blue);
-            font-weight: bold;
-            margin-right: 0.75rem;
-        }
-        .button {
-            display: inline-block;
-            background-color: var(--color-electric-blue);
-            color: var(--color-dark-gray);
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-            margin-top: 1rem;
-        }
-        .button:hover {
-            background-color: var(--color-white);
-            color: var(--color-dark-gray);
-        }
-        .footer {
-            background-color: var(--color-medium-gray);
-            border-top: 2px solid var(--color-electric-blue);
-            padding: 1.5rem 0;
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--color-light-gray);
-            margin-top: 2rem;
-        }
-        .footer a {
-            color: var(--color-electric-blue);
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        /* Grid specific for main content layout */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 1.5rem;
-        }
-        @media (min-width: 768px) {
-            .grid-cols-2 {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .grid-cols-3 {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        .text-electric-blue { color: var(--color-electric-blue); }
-        .bg-dark-gray { background-color: var(--color-dark-gray); }
-        .border-electric-blue { border-color: var(--color-electric-blue); }
-        .text-white { color: var(--color-white); }
-        .text-lg { font-size: 1.125rem; }
-        .font-bold { font-weight: bold; }
-        .p-4 { padding: 1rem; }
-        .mb-4 { margin-bottom: 1rem; }
-        .rounded-lg { border-radius: 0.5rem; /* Brutalist avant-garde might avoid soft corners, but if previous page used it, keep it. */ }
-        .flex { display: flex; }
-        .justify-between { justify-content: space-between; }
-        .items-center { align-items: center; }
-        .space-x-4 > *:not(:first-child) { margin-left: 1rem; }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>소개 | 서울 밤의 길잡이</title>
+ <meta name="description" content="서울 유흥업소 이용 가이드 블로그 운영진을 소개합니다. 투명하고 안전한 밤문화 조성을 위한 저희의 철학과 비전을 확인해보세요.">
+ <meta name="keywords" content="유흥 이용 주의사항, 셔츠룸, 룸싸롱, 텐프로, 텐카페, 쩜오, 하이퍼블릭, 풀싸롱, 가라오케, 노래방, 비즈니스클럽, 마사지, 펍, 유흥업소 체크리스트, 가격 투명성, 위생, 예약, 서울 유흥, 블로그 소개, 운영진">
+ <link rel="canonical" href="https://view.the-club-euljiro.xyz/about.html">
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://view.the-club-euljiro.xyz/about.html">
+ <meta property="og:title" content="소개 | 서울 밤의 길잡이">
+ <meta property="og:description" content="서울 유흥업소 이용 가이드 블로그 운영진을 소개합니다. 투명하고 안전한 밤문화 조성을 위한 저희의 철학과 비전을 확인해보세요.">
+ <meta property="og:image" content="https://view.the-club-euljiro.xyz/og-image.jpg">
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary_large_image">
+ <meta property="twitter:url" content="https://view.the-club-euljiro.xyz/about">
+ <meta property="twitter:title" content="소개 | 서울 밤의 길잡이">
+ <meta property="twitter:description" content="서울 유흥업소 이용 가이드 블로그 운영진을 소개합니다. 투명하고 안전한 밤문화 조성을 위한 저희의 철학과 비전을 확인해보세요.">
+ <meta property="twitter:image" content="https://view.the-club-euljiro.xyz/og-image.jpg">
+ <!-- CSS for Brutalist Avant-garde / KR Night Electric Theme (Inline for example, usually linked) -->
+ <style>
+ :root {
+ --color-electric-blue: #00FFFF;
+ --color-dark-gray: #1a1a1a;
+ --color-medium-gray: #333333;
+ --color-light-gray: #aaaaaa;
+ --color-white: #ffffff;
+ --font-mono: 'D2Coding', 'Nanum Gothic Coding', monospace;
+ --font-sans: 'Pretendard', 'Noto Sans KR', sans-serif;
+ }
+ body {
+ font-family: var(--font-sans);
+ background-color: var(--color-dark-gray);
+ color: var(--color-light-gray);
+ margin: 0;
+ padding: 0;
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 1rem;
+ }
+ .header {
+ background-color: var(--color-medium-gray);
+ border-bottom: 2px solid var(--color-electric-blue);
+ padding: 1rem 0;
+ text-align: center;
+ }
+ .header .logo {
+ font-family: var(--font-mono);
+ font-size: 2.5rem;
+ color: var(--color-electric-blue);
+ text-decoration: none;
+ letter-spacing: 2px;
+ display: block;
+ margin-bottom: 0.5rem;
+ text-shadow: 0 0 8px var(--color-electric-blue);
+ }
+ .header .tagline {
+ font-size: 1rem;
+ color: var(--color-light-gray);
+ margin-bottom: 1rem;
+ }
+ .nav {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+ margin-top: 1rem;
+ }
+ .nav-item {
+ background-color: var(--color-dark-gray);
+ border: 1px solid var(--color-electric-blue);
+ padding: 0.5rem 1rem;
+ text-decoration: none;
+ color: var(--color-electric-blue);
+ font-weight: bold;
+ transition: background-color 0.3s, color 0.3s;
+ white-space: nowrap;
+ }
+ .nav-item:hover, .nav-item.active {
+ background-color: var(--color-electric-blue);
+ color: var(--color-dark-gray);
+ }
+ .main-content {
+ padding: 2rem 0;
+ }
+ .section-title {
+ font-family: var(--font-mono);
+ font-size: 2rem;
+ color: var(--color-electric-blue);
+ border-bottom: 2px solid var(--color-electric-blue);
+ padding-bottom: 0.5rem;
+ margin-bottom: 2rem;
+ text-align: center;
+ text-shadow: 0 0 5px var(--color-electric-blue);
+ }
+ .card {
+ background-color: var(--color-medium-gray);
+ border: 1px solid var(--color-electric-blue);
+ padding: 1.5rem;
+ margin-bottom: 1.5rem;
+ box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+ }
+ .card-title {
+ font-family: var(--font-mono);
+ font-size: 1.5rem;
+ color: var(--color-electric-blue);
+ margin-bottom: 1rem;
+ text-shadow: 0 0 3px var(--color-electric-blue);
+ }
+ .card p {
+ color: var(--color-light-gray);
+ margin-bottom: 1rem;
+ }
+ .checklist {
+ list-style: none;
+ padding: 0;
+ margin: 1rem 0;
+ }
+ .checklist-item {
+ background-color: var(--color-dark-gray);
+ border: 1px dashed var(--color-electric-blue);
+ padding: 0.75rem 1rem;
+ margin-bottom: 0.5rem;
+ color: var(--color-white);
+ display: flex;
+ align-items: center;
+ }
+ .checklist-item::before {
+ content: '→';
+ color: var(--color-electric-blue);
+ font-weight: bold;
+ margin-right: 0.75rem;
+ }
+ .button {
+ display: inline-block;
+ background-color: var(--color-electric-blue);
+ color: var(--color-dark-gray);
+ padding: 0.75rem 1.5rem;
+ text-decoration: none;
+ font-weight: bold;
+ border: none;
+ cursor: pointer;
+ transition: background-color 0.3s, color 0.3s;
+ margin-top: 1rem;
+ }
+ .button:hover {
+ background-color: var(--color-white);
+ color: var(--color-dark-gray);
+ }
+ .footer {
+ background-color: var(--color-medium-gray);
+ border-top: 2px solid var(--color-electric-blue);
+ padding: 1.5rem 0;
+ text-align: center;
+ font-size: 0.9rem;
+ color: var(--color-light-gray);
+ margin-top: 2rem;
+ }
+ .footer a {
+ color: var(--color-electric-blue);
+ text-decoration: none;
+ }
+ .footer a:hover {
+ text-decoration: underline;
+ }
+ /* Grid specific for main content layout */
+ .grid {
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ gap: 1.5rem;
+ }
+ @media (min-width: 768px) {
+ .grid-cols-2 {
+ grid-template-columns: repeat(2, 1fr);
+ }
+ .grid-cols-3 {
+ grid-template-columns: repeat(3, 1fr);
+ }
+ }
+ .text-electric-blue { color: var(--color-electric-blue); }
+ .bg-dark-gray { background-color: var(--color-dark-gray); }
+ .border-electric-blue { border-color: var(--color-electric-blue); }
+ .text-white { color: var(--color-white); }
+ .text-lg { font-size: 1.125rem; }
+ .font-bold { font-weight: bold; }
+ .p-4 { padding: 1rem; }
+ .mb-4 { margin-bottom: 1rem; }
+ .rounded-lg { border-radius: 0.5rem; /* Brutalist avant-garde might avoid soft corners, but if previous page used it, keep it. */ }
+ .flex { display: flex; }
+ .justify-between { justify-content: space-between; }
+ .items-center { align-items: center; }
+ .space-x-4 > *:not(:first-child) { margin-left: 1rem; }
+ </style>
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <a href="/" class="logo">THE CLUB 을지로</a>
-            <p class="tagline">서울 밤의 모든 것, 투명하게 안내합니다.</p>
-            <nav class="nav">
-                <a href="/" class="nav-item">홈</a>
-                <a href="/checklist" class="nav-item">체크리스트</a>
-                <a href="/regions" class="nav-item">지역별 정보</a>
-                <a href="/faq" class="nav-item">FAQ</a>
-                <a href="/about" class="nav-item active">소개</a>
-            </nav>
-        </header>
+ <div class="container">
+ <header class="header">
+ <a href="/" class="logo">THE CLUB 을지로</a>
+ <p class="tagline">서울 밤의 모든 것, 투명하게 안내합니다.</p>
+ <nav class="nav">
+ <a href="/" class="nav-item">홈</a>
+ <a href="/checklist" class="nav-item">체크리스트</a>
+ <a href="/regions" class="nav-item">지역별 정보</a>
+ <a href="/faq" class="nav-item">FAQ</a>
+ <a href="/about" class="nav-item active">소개</a>
+ </nav>
+ </header>
 
-        <main class="main-content">
-            <h1 class="section-title">서울 밤의 길잡이, 저희를 소개합니다</h1>
+ <main class="main-content">
+ <h1 class="section-title">서울 밤의 길잡이, 저희를 소개합니다</h1>
 
-            <div class="card mb-4">
-                <h2 class="card-title">이 길을 걷게 된 이유</h2>
-                <p>
-                    안녕하세요! '더 클럽 을지로' 블로그를 운영하는 저희는, 여러분이 서울의 밤문화를 더 안전하고 즐겁게 탐험하시도록 돕기 위해 뭉쳤습니다.
-                    솔직히 말씀드리면, 저희도 처음엔 막막했어요. 어디를 가야 할지, 가격은 합리적인지, 서비스는 괜찮은지… 정보는 부족하고, 괜히 발품만 팔다 실망한 적도 많았죠.
-                </p>
-                <p>
-                    그래서 생각했습니다. 왜 이렇게 복잡하고 불투명해야만 할까? 제대로 된 '길잡이' 하나만 있다면, 모두가 만족스러운 경험을 할 수 있지 않을까?
-                    저희의 작은 경험과 고민이 이 블로그의 시작점이 되었답니다. 여러분의 소중한 밤을 위해, 저희가 직접 발로 뛰고 확인한 정보들을 공유하고 싶었어요.
-                </p>
-            </div>
+ <div class="card mb-4">
+ <h2 class="card-title">이 길을 걷게 된 이유</h2>
+ <p>
+ 안녕하세요! '더 클럽 을지로' 블로그를 운영하는 저희는, 여러분이 서울의 밤문화를 더 안전하고 즐겁게 탐험하시도록 돕기 위해 뭉쳤습니다.
+ 솔직히 말씀드리면, 저희도 처음엔 막막했어요. 어디를 가야 할지, 가격은 합리적인지, 서비스는 괜찮은지… 정보는 부족하고, 괜히 발품만 팔다 실망한 적도 많았죠.
+ </p>
+ <p>
+ 그래서 생각했습니다. 왜 이렇게 복잡하고 불투명해야만 할까? 제대로 된 '길잡이' 하나만 있다면, 모두가 만족스러운 경험을 할 수 있지 않을까?
+ 저희의 작은 경험과 고민이 이 블로그의 시작점이 되었답니다. 여러분의 소중한 밤을 위해, 저희가 직접 발로 뛰고 확인한 정보들을 공유하고 싶었어요.
+ </p>
+ </div>
 
-            <div class="grid grid-cols-1 grid-cols-2 gap-4">
-                <div class="card">
-                    <h2 class="card-title">저희만의 '길 안내' 방식</h2>
-                    <p>
-                        저희는 단순히 업소 정보를 나열하는 것을 넘어섭니다. 마치 서울 지하철 노선도처럼, 복잡해 보이는 유흥 지도를 명확하고 직관적으로 보여드리고 싶어요.
-                        이를 위해 다음과 같은 원칙들을 지키고 있습니다:
-                    </p>
-                    <ul class="checklist">
-                        <li class="checklist-item"><strong>투명성 확보:</strong> 모호한 정보는 NO! 가격, 서비스 내용 등 핵심 정보를 최대한 명확하게 전달합니다.</li>
-                        <li class="checklist-item"><strong>경험 기반 통찰:</strong> 단순 광고가 아닌, 실질적인 이용자 관점에서 필요한 팁과 주의사항을 제공합니다.</li>
-                        <li class="checklist-item"><strong>지속적인 업데이트:</strong> 빠르게 변하는 유흥 트렌드와 정보를 놓치지 않고, 최신 상태를 유지하려 노력합니다.</li>
-                        <li class="checklist-item"><strong>안전 최우선:</strong> 위생, 법적 문제 등 안전과 직결된 부분은 특히 강조하여 여러분의 피해를 예방합니다.</li>
-                    </ul>
-                </div>
+ <div class="grid grid-cols-1 grid-cols-2 gap-4">
+ <div class="card">
+ <h2 class="card-title">저희만의 '길 안내' 방식</h2>
+ <p>
+ 저희는 단순히 업소 정보를 나열하는 것을 넘어섭니다. 마치 서울 지하철 노선도처럼, 복잡해 보이는 유흥 지도를 명확하고 직관적으로 보여드리고 싶어요.
+ 이를 위해 다음과 같은 원칙들을 지키고 있습니다:
+ </p>
+ <ul class="checklist">
+ <li class="checklist-item"><strong>투명성 확보:</strong> 모호한 정보는 NO! 가격, 서비스 내용 등 핵심 정보를 최대한 명확하게 전달합니다.</li>
+ <li class="checklist-item"><strong>경험 기반 통찰:</strong> 단순 광고가 아닌, 실질적인 이용자 관점에서 필요한 팁과 주의사항을 제공합니다.</li>
+ <li class="checklist-item"><strong>지속적인 업데이트:</strong> 빠르게 변하는 유흥 트렌드와 정보를 놓치지 않고, 최신 상태를 유지하려 노력합니다.</li>
+ <li class="checklist-item"><strong>안전 최우선:</strong> 위생, 법적 문제 등 안전과 직결된 부분은 특히 강조하여 여러분의 피해를 예방합니다.</li>
+ </ul>
+ </div>
 
-                <div class="card">
-                    <h2 class="card-title">함께 만들어가는 '안전한 밤길'</h2>
-                    <p>
-                        저희는 이 블로그가 단순히 일방적인 정보 제공처가 아니라, 여러분과 함께 만들어가는 공간이 되길 바랍니다.
-                        여러분의 솔직한 경험담이나 궁금증은 저희에게 큰 동기 부여가 돼요.
-                    </p>
-                    <p>
-                        혹시 블로그에서 다루어줬으면 하는 주제가 있거나, 궁금한 점이 있다면 언제든지 <span class="text-electric-blue font-bold">문의</span>해주세요.
-                        저희는 여러분의 피드백을 통해 더 나은 '밤길'을 안내하는 데 최선을 다할 겁니다.
-                        서울의 밤을 안전하고 즐겁게, 그리고 현명하게 누리실 수 있도록 저희 '더 클럽 을지로'가 항상 옆에서 든든한 동반자가 되어 드릴게요!
-                    </p>
-                    <a href="/faq" class="button">자주 묻는 질문 보러가기</a>
-                </div>
-            </div>
+ <div class="card">
+ <h2 class="card-title">함께 만들어가는 '안전한 밤길'</h2>
+ <p>
+ 저희는 이 블로그가 단순히 일방적인 정보 제공처가 아니라, 여러분과 함께 만들어가는 공간이 되길 바랍니다.
+ 여러분의 솔직한 경험담이나 궁금증은 저희에게 큰 동기 부여가 돼요.
+ </p>
+ <p>
+ 혹시 블로그에서 다루어줬으면 하는 주제가 있거나, 궁금한 점이 있다면 언제든지 <span class="text-electric-blue font-bold">문의</span>해주세요.
+ 저희는 여러분의 피드백을 통해 더 나은 '밤길'을 안내하는 데 최선을 다할 겁니다.
+ 서울의 밤을 안전하고 즐겁게, 그리고 현명하게 누리실 수 있도록 저희 '더 클럽 을지로'가 항상 옆에서 든든한 동반자가 되어 드릴게요!
+ </p>
+ <a href="/faq" class="button">자주 묻는 질문 보러가기</a>
+ </div>
+ </div>
 
-            <div class="card mt-4">
-                <h2 class="card-title">저희가 바라보는 미래</h2>
-                <p>
-                    저희의 궁극적인 목표는 서울의 유흥 문화가 더욱 투명하고 건강하게 발전하는 데 일조하는 것입니다.
-                    그저 '놀기 위한 공간'을 넘어, 서로를 존중하고 즐거운 추억을 만들 수 있는 건전한 문화 공간으로 인식될 수 있도록,
-                    저희는 끊임없이 정보를 탐색하고, 공유하며, 발전해 나갈 것입니다.
-                </p>
-                <p>
-                    여러분의 밤이 언제나 빛나고, 후회 없는 경험으로 가득하길 바랍니다.
-                    감사합니다!
-                </p>
-            </div>
-        </main>
+ <div class="card mt-4">
+ <h2 class="card-title">저희가 바라보는 미래</h2>
+ <p>
+ 저희의 궁극적인 목표는 서울의 유흥 문화가 더욱 투명하고 건강하게 발전하는 데 일조하는 것입니다.
+ 그저 '놀기 위한 공간'을 넘어, 서로를 존중하고 즐거운 추억을 만들 수 있는 건전한 문화 공간으로 인식될 수 있도록,
+ 저희는 끊임없이 정보를 탐색하고, 공유하며, 발전해 나갈 것입니다.
+ </p>
+ <p>
+ 여러분의 밤이 언제나 빛나고, 후회 없는 경험으로 가득하길 바랍니다.
+ 감사합니다!
+ </p>
+ </div>
+ </main>
 
-        <footer class="footer">
-            <p>&copy; 2023 THE CLUB 을지로. All rights reserved.</p>
-            <p>
-                <a href="/privacy-policy">개인정보처리방침</a> |
-                <a href="/terms-of-service">이용약관</a>
-            </p>
-        </footer>
-    </div>
+ <footer class="footer">
+ <p>&copy; 2023 THE CLUB 을지로. All rights reserved.</p>
+ <p>
+ <a href="/privacy-policy">개인정보처리방침</a> |
+ <a href="/terms-of-service">이용약관</a>
+ </p>
+ </footer>
+ </div>
 </body>
 </html>
