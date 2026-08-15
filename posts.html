@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 · t2-view-the-club-euljiro</title>
+  <meta name="description" content="t2-view-the-club-euljiro에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://view.the-club-euljiro.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --color-electric-blue: #00FFFF;
+ --color-dark-gray: #1a1a1a;
+ --color-medium-gray: #333333;
+ --color-light-gray: #aaaaaa;
+ --color-white: #ffffff;
+ --font-mono: 'D2Coding', 'Nanum Gothic Coding', monospace;
+ --font-sans: 'Pretendard', 'Noto Sans KR', sans-serif;
+ }
+ body {
+ font-family: var(--font-sans);
+ background-color: var(--color-dark-gray);
+ color: var(--color-light-gray);
+ margin: 0;
+ padding: 0;
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 1rem;
+ }
+ .header {
+ background-color: var(--color-medium-gray);
+ border-bottom: 2px solid var(--color-electric-blue);
+ padding: 1rem 0;
+ text-align: center;
+ }
+ .header .logo {
+ font-family: var(--font-mono);
+ font-size: 2.5rem;
+ color: var(--color-electric-blue);
+ text-decoration: none;
+ letter-spacing: 2px;
+ display: block;
+ margin-bottom: 0.5rem;
+ text-shadow: 0 0 8px var(--color-electric-blue);
+ }
+ .header .tagline {
+ font-size: 1rem;
+ color: var(--color-light-gray);
+ margin-bottom: 1rem;
+ }
+ .nav {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+ margin-top: 1rem;
+ }
+ .nav-item {
+ background-color: var(--color-dark-gray);
+ border: 1px solid var(--color-electric-blue);
+ padding: 0.5rem 1rem;
+ text-decoration: none;
+ color: var(--color-electric-blue);
+ font-weight: bold;
+ transition: background-color 0.3s, color 0.3s;
+ white-space: nowrap;
+ }
+ .nav-item:hover, .nav-item.active {
+ background-color: var(--color-electric-blue);
+ color: var(--color-dark-gray);
+ }
+ .main-content {
+ padding: 2rem 0;
+ }
+ .section-title {
+ font-family: var(--font-mono);
+ font-size: 2rem;
+ color: var(--color-electric-blue);
+ border-bottom: 2px solid var(--color-electric-blue);
+ padding-bottom: 0.5rem;
+ margin-bottom: 2rem;
+ text-align: center;
+ text-shadow: 0 0 5px var(--color-electric-blue);
+ }
+ .card {
+ background-color: var(--color-medium-gray);
+ border: 1px solid var(--color-electric-blue);
+ padding: 1.5rem;
+ margin-bottom: 1.5rem;
+ box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+ }
+ .card-title {
+ font-family: var(--font-mono);
+ font-size: 1.5rem;
+ color: var(--color-electric-blue);
+ margin-bottom: 1rem;
+ text-shadow: 0 0 3px var(--color-electric-blue);
+ }
+ .card p {
+ color: var(--color-light-gray);
+ margin-bottom: 1rem;
+ }
+ .checklist {
+ list-style: none;
+ padding: 0;
+ margin: 1rem 0;
+ }
+ .checklist-item {
+ background-color: var(--color-dark-gray);
+ border: 1px dashed var(--color-electric-blue);
+ padding: 0.75rem 1rem;
+ margin-bottom: 0.5rem;
+ color: var(--color-white);
+ display: flex;
+ align-items: center;
+ }
+ .checklist-item::before {
+ content: '→';
+ color: var(--color-electric-blue);
+ font-weight: bold;
+ margin-right: 0.75rem;
+ }
+ .button {
+ display: inline-block;
+ background-color: var(--color-electric-blue);
+ color: var(--color-dark-gray);
+ padding: 0.75rem 1.5rem;
+ text-decoration: none;
+ font-weight: bold;
+ border: none;
+ cursor: pointer;
+ transition: background-color 0.3s, color 0.3s;
+ margin-top: 1rem;
+ }
+ .button:hover {
+ background-color: var(--color-white);
+ color: var(--color-dark-gray);
+ }
+ .footer {
+ background-color: var(--color-medium-gray);
+ border-top: 2px solid var(--color-electric-blue);
+ padding: 1.5rem 0;
+ text-align: center;
+ font-size: 0.9rem;
+ color: var(--color-light-gray);
+ margin-top: 2rem;
+ }
+ .footer a {
+ color: var(--color-electric-blue);
+ text-decoration: none;
+ }
+ .footer a:hover {
+ text-decoration: underline;
+ }
+ /* Grid specific for main content layout */
+ .grid {
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ gap: 1.5rem;
+ }
+ @media (min-width: 768px) {
+ .grid-cols-2 {
+ grid-template-columns: repeat(2, 1fr);
+ }
+ .grid-cols-3 {
+ grid-template-columns: repeat(3, 1fr);
+ }
+ }
+ .text-electric-blue { color: var(--color-electric-blue); }
+ .bg-dark-gray { background-color: var(--color-dark-gray); }
+ .border-electric-blue { border-color: var(--color-electric-blue); }
+ .text-white { color: var(--color-white); }
+ .text-lg { font-size: 1.125rem; }
+ .font-bold { font-weight: bold; }
+ .p-4 { padding: 1rem; }
+ .mb-4 { margin-bottom: 1rem; }
+ .rounded-lg { border-radius: 0.5rem; /* Brutalist avant-garde might avoid soft corners, but if previous page used it, keep it. */ }
+ .flex { display: flex; }
+ .justify-between { justify-content: space-between; }
+ .items-center { align-items: center; }
+ .space-x-4 > *:not(:first-child) { margin-left: 1rem; }
+ </style>
+  <meta property="og:title" content="글 목록 · t2-view-the-club-euljiro">
+  <meta property="og:description" content="t2-view-the-club-euljiro에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://view.the-club-euljiro.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+ <a href="/" class="logo">THE CLUB 을지로</a>
+ <p class="tagline">서울 밤의 모든 것, 투명하게 안내합니다.</p>
+ <nav class="nav">
+ <a href="/" class="nav-item">홈</a>
+ <a href="/checklist" class="nav-item">체크리스트</a>
+ <a href="/regions" class="nav-item">지역별 정보</a>
+ <a href="/faq" class="nav-item">FAQ</a>
+ <a href="/about" class="nav-item active">소개</a>
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 14개</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-001-1ox2ka4.html">홍대 바닥에서 3천 매출 찍고도 밑바닥 친 놈의 참회록</a>
+        <p class="post-item__summary">**관찰 기록**2023년 10월, 홍대입구역 뒤편 주차장 거리에서 6개월 만에 셔터를 내렸다. 월 매출 3,000만 원. 숫자로만 보면 누구나 탐낼 성적표였지. 그런데 통장 잔고는 왜 항상 마이너</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-qrzs29.html">홍대 임대차 계약서에 숨은 독소 조항, 권리금 2억 날린 사장님은 몰랐다</a>
+        <p class="post-item__summary">왜 어떤 가게는 권리금 2억을 받고 팔고, 바로 옆 가게는 보증금도 못 건지고 철거비만 물고 나갈까요? 같은 골목, 같은 평수, 업종도 비슷한데 말이죠.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-003-1gwcb32.html">유흥 이용 주의사항 현장에서 확인한 선택 기준과 주의점</a>
+        <p class="post-item__summary">서울에서 유흥 업소를 방문할 때 만족스러운 경험을 얻기 위해서는 사전 정보 조사와 명확한 선택 기준이 필요합니다. 이용하고자 하는 목적과 분위기에 맞는 곳을 미리 확인하면 예상치 못한 불편함을 줄일</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-001-1x5kf14.html">홍대 상권, 폐업과 생존의 내막</a>
+        <p class="post-item__summary">홍대 상권에서 폐업한 업소들과 살아남은 곳들의 차별화 전략을 분석하다 보면, 일반적으로 알려진 상권 분석 방법이나 통계는 제대로 된 해답을 주지 않는다는 것을 알게 됩니다. 그보다는, 임대차 계약 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-002-1bpw5mf.html">정보 블로그 해결 방법 총정리</a>
+        <p class="post-item__summary">서울과 같은 대도시에서 유흥 및 관련 엔터테인먼트 시설을 이용할 때는 사전에 안전 수칙과 주의사항을 숙지하는 것이 매우 중요합니다. 올바른 정보 수집과 신중한 태도는 예상치 못한 불편이나 불이익을 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-005-evsl02.html">룸 좀 다녀본 놈들이 절대 말 안 해주는 3천만 원 매출의 함정</a>
+        <p class="post-item__summary">카운터에 찍힌 3,200만 원이라는 숫자를 보고 웃으며 퇴근하던 날 밤, 나는 내 매장이 완벽한 황금알을 낳는 거위인 줄 알았다. 하지만 정산서를 뜯어본 건 그로부터 6개월 뒤, 보증금에서 월세가 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-002-1cj8hcc.html">매출 3천의 함정, 룸살롱 원가 구조가 당신의 지갑을 털어가는 방식</a>
+        <p class="post-item__summary">월 매출 3천만 원을 찍는데 왜 통장 잔고는 바닥을 기었을까? 겉보기엔 화려한 룸 단위 서비스업의 민낯은 계산기를 두드려보면 금방 드러나지. 대다수가 매출 외형에 취해 있을 때, 나는 실질 마진율이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-003-1cmslrg.html">글룸헤이븐 판갈이 카드 에라타, 이 정도 디테일 모르면 룰충 자격 없음</a>
+        <p class="post-item__summary">지난주 금요일 밤, 신도림 모처의 먼지 쌓인 보드게임방 구석. 어떤 놈이 글룸헤이븐 1판 박스를 열어놓고 &quot;2판으로 너프된 스펠위버 카드가 뭐였냐&quot;고 묻더군요. 옆에서 듣다가 하도 답답해서 내가 대</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-004-1ggcxel.html">유흥 이용 주의사항 vs 유흥 이용 주의사항 비교</a>
+        <p class="post-item__summary">서울에서 유흥 업소를 방문하거나 관련 서비스를 이용할 때 사전 주의사항을 숙지하는 것은 매우 중요합니다. 일반적인 이용 안내 정보를 바탕으로 핵심 요소를 비교해 보면, 첫 번째로 신원 확인과 사전 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-001-1xdfq5a.html">유흥 이용 주의사항에 대한 통념과 실제 차이를 검토했다</a>
+        <p class="post-item__summary">서울 도심의 유흥 공간을 이용할 때 많은 사람이 잘못된 상식이나 통념을 바탕으로 판단하곤 합니다. 대표적인 오해 중 하나는 사전 안내 없이 정해진 금액 외 추가 비용이 당연히 발생할 것이라는 생각입</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-004-1mrymid.html">3천 매출의 배신, 룸살롱 원가표를 까본다</a>
+        <p class="post-item__summary">월 매출 3,000만 원, 겉보기엔 화려했지. 그런데 6개월 만에 보증금 1억을 다 까먹고 쫓겨나듯 문을 닫았다. 사람들이 흔히 말하는 '마진율 70%'라는 개소리를 철석같이 믿은 게 내 패착이었거</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-003-1nrcku.html">홍대 바닥에서 눈탱이 안 맞고 살아남는 법, 사장님들은 절대 말 안 해주는 셈법</a>
+        <p class="post-item__summary">홍대 상권이 죽었다고 징징대는 사장님들은 보통 '감성'만 챙기다 골로 갑니다. 사실 손님 입장에서 뜯어보면, 문 닫는 집들은 하나같이 메뉴판 원가율 계산도 안 되는 비효율의 극치였거든요. 제가 단골</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-004-y3vxxr.html">리셀러의 눈물, 한정판 아식스 젤 카야노 14 OG 아이보리 컬러웨이의 진품 감별 포인트</a>
+        <p class="post-item__summary">중고 리셀러로서 한정판 스니커즈를 취급하다 보면, 진품 감별이 가장 큰 고민입니다. 특히 아식스 젯 카야노 14 OG 아이보리 컬러웨이의 경우, 2023년 리스탁 버전에서 달라진 인솔 로고 프린트가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-005-1a4d6oi.html">유흥 이용 주의사항 관련 질문을 상황별로 정리해봤다</a>
+        <p class="post-item__summary">처음 유흥 업소를 방문하거나 낯선 지역에서 이용할 때는 기본적인 이용 방식과 시스템을 사전에 숙지하는 것이 중요합니다. 입장 전 예약 조건이나 운영 방식이 어떻게 진행되는지 명확히 확인해야 예상치 </p>
+      </li>
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
